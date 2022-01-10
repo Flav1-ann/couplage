@@ -5,12 +5,13 @@ import eu.ensup.beansXml.dao.MusiqueDao;
 import eu.ensup.beansXml.dao.MusiqueDaoAlt;
 import eu.ensup.beansXml.domaine.Musique;
 import eu.ensup.beansXml.services.MusiqueService;
+import org.springframework.beans.BeansException;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class Launcher {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws BeansException {
 
         //1. Chargement
         ConfigurableApplicationContext applicationContext = (ConfigurableApplicationContext) new ClassPathXmlApplicationContext(
