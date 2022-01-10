@@ -1,12 +1,12 @@
-package services;
+package eu.ensup.couplageFort.services;
 
-import dao.MusiqueDao;
-import domaine.Musique;
+import eu.ensup.couplageFort.dao.MusiqueDao;
+import eu.ensup.couplageFort.domaine.Musique;
 
 import java.util.List;
 
 public class MusiqueService {
-    private dao.MusiqueDao MusiqueDao;
+    private eu.ensup.couplageFort.dao.MusiqueDao MusiqueDao;
 
     public MusiqueService() {
         super();

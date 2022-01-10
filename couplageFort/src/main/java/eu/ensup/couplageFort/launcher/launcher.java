@@ -1,7 +1,7 @@
-package launcher;
+package eu.ensup.couplageFort.launcher;
 
-import domaine.Musique;
-import services.MusiqueService;
+import eu.ensup.couplageFort.domaine.Musique;
+import eu.ensup.couplageFort.services.MusiqueService;
 
 import java.util.Scanner;
 
