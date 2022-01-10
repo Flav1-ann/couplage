@@ -28,9 +28,9 @@ Dans ce cas nous avons un conteneur avec 3 bean.
 Le 3ᵉ objectif met en pratique le framework spring. On utilise notamment des beans au travers d'une classe pour paramétrer un conteneur.
 Dans ce cas nous avons un conteneur avec 3 bean.
 
-**Exercice beans2XmlConfig **
+**Exercice beans2XmlConfig**
 
-Le 4ᵉ  objectif met en pratique le framework spring. On utilise notamment des beans au travers de 2 fichiers xml pour paramétrer un conteneur.
+Le 4ᵉ objectif met en pratique le framework spring. On utilise notamment des beans au travers de 2 fichiers xml pour paramétrer un conteneur.
 Dans ce cas nous avons un conteneur avec 2 bean dao et un conteneur avec 1 bean service et dans le conteneur service il faut un import du fichier xml du conteneur dao.
 
 **Exercice beans2Class **
