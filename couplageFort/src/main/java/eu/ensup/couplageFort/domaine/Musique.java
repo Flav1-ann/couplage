@@ -1,4 +1,4 @@
-package domaine;
+package eu.ensup.couplageFort.domaine;
 
 public class Musique {
     private int id;

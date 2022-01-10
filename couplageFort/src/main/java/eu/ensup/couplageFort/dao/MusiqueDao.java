@@ -1,6 +1,6 @@
-package dao;
+package eu.ensup.couplageFort.dao;
 
-import domaine.Musique;
+import eu.ensup.couplageFort.domaine.Musique;
 
 import java.util.List;
 
