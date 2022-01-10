@@ -45,10 +45,10 @@ public class MusiqueService {
     }
 
     private void initialisation() {
-        System.out.println("SERVICE : INIT avec le l'interface " + iDao.getClass());
+        System.out.println("SERVICE : INIT avec la " + iDao.getClass());
     }
 
     private void destruction() {
-        System.out.println("SERVICE : DESTRUCT avec le l'interface " + iDao.getClass());
+        System.out.println("SERVICE : DESTRUCT avec la " + iDao.getClass());
     }
 }
