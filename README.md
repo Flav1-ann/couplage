@@ -22,3 +22,8 @@ Le premier exercice s'est focalisé sur le couplage. On y a étudié et comparé
 
 Le second objectif met en pratique le framework spring. On utilise notamment des beans au travers d'un fichier xml pour paramétrer un conteneur.
 Dans ce cas nous avons un conteneur avec 3 bean.
+
+**Exercice beansClass**
+
+Le 3ᵉ objectif met en pratique le framework spring. On utilise notamment des beans au travers d'une classe pour paramétrer un conteneur.
+Dans ce cas nous avons un conteneur avec 3 bean.
