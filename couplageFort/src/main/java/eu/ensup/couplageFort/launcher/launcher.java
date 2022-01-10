@@ -21,7 +21,7 @@ public class launcher {
             Musique musiqueload = serviceMusique.recuperationMusique(Integer.parseInt(input));
 
             if (musiqueload != null){
-                System.out.println("la musique "+ musiqueload.getTitre()+" est chargée.");
+                System.out.println("la musique \" "+ musiqueload.getTitre()+"\" est chargée.");
             }else {
                 System.out.println("Aucune musique n'as été trouvée");
             }
