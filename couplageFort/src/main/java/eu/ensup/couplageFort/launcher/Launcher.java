@@ -5,7 +5,7 @@ import eu.ensup.couplageFort.services.MusiqueService;
 
 import java.util.Scanner;
 
-public class launcher {
+public class Launcher {
     public static void main(String[] args) {
 
         MusiqueService serviceMusique = new MusiqueService();
