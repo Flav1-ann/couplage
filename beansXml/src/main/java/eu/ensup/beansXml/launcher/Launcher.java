@@ -26,9 +26,9 @@ public class Launcher {
 
         Musique musique = musiqueService.trouverMusique(1);
         if (musique != null) {
-            System.out.println("yes");
+            System.out.println("la musique a été trouvé");
         } else {
-            System.out.println("no");
+            System.out.println("la musique n'as pas été trouvé");
         }
 
         applicationContext.close();
