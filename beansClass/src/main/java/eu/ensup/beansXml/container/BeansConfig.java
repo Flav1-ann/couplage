@@ -9,17 +9,17 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class BeansConfig {
     @Bean(initMethod = "initialisation", destroyMethod = "destruction")
-    public MusiqueService MusiqueService() {
-        return new MusiqueService(MusiqueDaoJpa());
+    public MusiqueService musiqueService() {
+        return new MusiqueService(musiqueDaoJpa());
     }
 
     @Bean(initMethod = "initialisation", destroyMethod = "destruction")
-    public MusiqueDao MusiqueDao() {
+    public MusiqueDao musiqueDao() {
         return new MusiqueDao();
     }
 
     @Bean(initMethod = "initialisation", destroyMethod = "destruction")
-    public MusiqueDaoAlt MusiqueDaoJpa() {
+    public MusiqueDaoAlt musiqueDaoJpa() {
         return new MusiqueDaoAlt();
     }
 

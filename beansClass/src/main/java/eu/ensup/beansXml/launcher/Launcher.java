@@ -19,7 +19,7 @@ public class Launcher {
         ApplicationContext applicationContext = new AnnotationConfigApplicationContext(BeansConfig.class);
 
         //2. Récupération
-        MusiqueService musiqueService = (MusiqueService) applicationContext.getBean("MusiqueService");
+        MusiqueService musiqueService = (MusiqueService) applicationContext.getBean("musiqueService");
 
         //3. Manipulation
         Musique maZikMu = new Musique(5, "Moi", "Flavien", "Le temps des tempêtes");
