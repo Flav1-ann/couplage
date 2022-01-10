@@ -1,13 +1,12 @@
 /couplageFort/target/
-/couplageFort/*.iml/
+/couplageFort/*.iml
 /couplageFort/.idea/
 
 /couplageFaible/.idea/
 /couplageFaible/target/
-/couplageFaible/*.iml/
+/couplageFaible/*.iml
 
-/couplage/*.iml/
+/couplage/*.iml
 /couplage/.idea/
 /couplage/target/
-
 /.idea/
