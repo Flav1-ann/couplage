@@ -15,6 +15,9 @@ public class ServiceBeansConfig {
     @Autowired
     private MusiqueDaoAlt musiqueDaoAlt;
 
+    @Autowired
+    private MusiqueDao musiqueDao;
+
     @Bean(initMethod = "initialisation", destroyMethod = "destruction")
     public MusiqueService musiqueService() {
         return new MusiqueService(musiqueDaoAlt);
