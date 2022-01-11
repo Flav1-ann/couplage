@@ -33,7 +33,6 @@ public class MusiqueDao implements IDao{
         ResultSet rs = null;
 
         try {
-
             // Etape 1 : Chargement du driver
             Class.forName("com.mysql.cj.jdbc.Driver");
 
