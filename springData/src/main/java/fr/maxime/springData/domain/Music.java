@@ -1,11 +1,14 @@
 package fr.maxime.springData.domain;
 
+import lombok.Getter;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
+@Getter
 public class Music {
 
     @Id
@@ -28,15 +31,4 @@ public class Music {
                 id, title, author);
     }
 
-    public Long getId() {
-        return id;
-    }
-
-    public String getTitle() {
-        return title;
-    }
-
-    public String getAuthor() {
-        return author;
-    }
 }
