@@ -1,7 +1,7 @@
 package fr.maxime.springData;
 
-import fr.maxime.springData.domain.Customer;
-import fr.maxime.springData.repository.CustomerRepository;
+import fr.maxime.springData.domain.Music;
+import fr.maxime.springData.repository.MusicRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.CommandLineRunner;
@@ -19,35 +19,35 @@ public class SpringDataApplication {
 	}
 
 	@Bean
-	public CommandLineRunner demo(CustomerRepository repository){
+	public CommandLineRunner demo(MusicRepository repository){
 		return (args) -> {
-			repository.save(new Customer("Jack", "Bauer"));
-			repository.save(new Customer("Chloe", "O'Brian"));
-			repository.save(new Customer("Kim", "Bauer"));
-			repository.save(new Customer("David", "Palmer"));
-			repository.save(new Customer("Michelle", "Dessler"));
-			// fetch all customers
-			log.info("Customers found with findAll():");
+			repository.save(new Music("la kiffance", "naps"));
+			repository.save(new Music("billie jean", "MJ"));
+			repository.save(new Music("bohemian rhapsody", "Queen"));
+			repository.save(new Music("Allumer le feu", "Johnny Halliday"));
+			repository.save(new Music("Lune de fiel", "joker"));
+			// fetch all Musics
+			log.info("Musics found with findAll():");
 			log.info("-------------------------------");
-			for (Customer customer : repository.findAll()) {
-				log.info(customer.toString());
+			for (Music music : repository.findAll()) {
+				log.info(music.toString());
 			}
 			log.info("");
 
 			// fetch an individual customer by ID
-			Customer customer = repository.findById(1L);
-			log.info("Customer found with findById(1L):");
+			Music music = repository.findById(1L);
+			log.info("Musics found with findById(1L):");
 			log.info("--------------------------------");
-			log.info(customer.toString());
+			log.info(music.toString());
 			log.info("");
 
-			// fetch customers by last name
-			log.info("Customer found with findByLastName('Bauer'):");
+			// fetch musics by last name
+			log.info("Music found with findByLastName('Bauer'):");
 			log.info("--------------------------------------------");
-			repository.findByLastName("Bauer").forEach(bauer -> {
-				log.info(bauer.toString());
+			repository.findByTitle("la kiffance").forEach(naps -> {
+				log.info(naps.toString());
 			});
-			// for (Customer bauer : repository.findByLastName("Bauer")) {
+			// for (Music bauer : repository.findByLastName("Bauer")) {
 			//  log.info(bauer.toString());
 			// }
 			log.info("");
