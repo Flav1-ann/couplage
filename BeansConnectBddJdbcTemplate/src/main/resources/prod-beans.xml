@@ -6,7 +6,7 @@
     <context:property-placeholder location="classpath:datasource.properties" />
 
     <bean id="musiqueDao" class="eu.ensup.beansXml.dao.MusiqueDao" init-method="initialisation" destroy-method="destruction">
-        <property name="jdbcTemplate" ref="jdbcTemplate"></property>
+        <property name="jdbcTemplate" ref="jdbcTemplate"/>
     </bean>
 
     <bean id="musiqueDaoAlt" class="eu.ensup.beansXml.dao.MusiqueDaoAlt" init-method="initialisation" destroy-method="destruction">
