@@ -24,7 +24,6 @@ public class MusicController {
 
     @PostMapping("/music")
     public String musicSubmit(@ModelAttribute("music") Music music, Model model){
-        System.out.println(music);
         musicService.save(music);
         return "redirect:/";
     }

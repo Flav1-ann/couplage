@@ -21,7 +21,6 @@ public class MusicService {
     }
 
     public void save(Music music) {
-        System.out.println(music);
         musicRepository.save(music);
     }
 
