@@ -1,0 +1,15 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://thymeleaf.org"><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link th:href="@{/assets/main.css}" rel="stylesheet" />
+</head>
+<body>
+<h1>Form</h1>
+<form action="#" th:action="@{/music/}" th:object="${music}" method="post">
+    <p>Id: <input type="text" th:field="*{title}" /></p>
+    <p>Message: <input type="text" th:field="*{author}" /></p>
+    <p><input type="submit" value="Submit" />
+</form>
+</body>
+</html>
